@@ -1,12 +1,26 @@
-.navbar-lewagon {
+.navbar-own {
   justify-content: space-between;
   background: white;
+  margin: 20px 30px;
 }
 
-.navbar-lewagon .navbar-collapse {
+.navbar-own .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
+.navbar-own .navbar-brand img {
   width: 40px;
+}
+
+.nav-link {
+  font-family: "Montserrat";
+  font-size: 24;
+  color: $gray;
+  margin: 0 16px;
+}
+
+.title {
+  font-family: "Titillium Web";
+  font-weight: 700;
+  margin-left: -100px;
 }

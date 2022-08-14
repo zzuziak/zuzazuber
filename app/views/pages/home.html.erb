@@ -1,2 +1,31 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="home-background">
+  <%= image_tag "home_side.png", class: "side-image" %>
+  <div class="banner-slogan">
+    <p class="text">Read on.</p>
+    <p class="text">Connect with me.</p>
+    <p class="text">Collaborate.</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-5">
+  </div>
+  <div class="col-7">
+    <p class="intro-slogan">Welcome to my tiny space in the world wide web.</p>
+    <div class="intro-paragraph-container">
+      <p class="intro-paragraph">It’s a great place to start if you want to get to know me better. Altough I look like a 19 year old kid, I have already done quite a bit in my life.</p>
+      <p class="intro-paragraph">This space is  gathering my thoughts both on professional life, the tech world and mentoring women, and private stuff, including being a dog mum and traveling in a camper van with my partner.</p>
+      <p class="intro-paragraph">It’s your turn now to choose what you want to discover.</p>
+    </div>
+  </div>
+</div>
+
+<div class="row content">
+  <div class="col-6">
+    <p class="section-title text-center">READING</p>
+    <%= render "shared/post_preview", post: @posts.last %>
+  </div>
+  <div class="col-6">
+    <p class="section-title text-center">GET TO KNOW ME</p>
+  </div>
+</div>

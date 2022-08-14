@@ -1,0 +1,16 @@
+current directory: /home/zuz/code/zzuziak/zuzazuber/gems/debug-1.6.2/ext/debug
+/home/zuz/.rbenv/versions/3.1.2/bin/ruby -I /home/zuz/.rbenv/versions/3.1.2/lib/ruby/site_ruby/3.1.0 extconf.rb
+creating Makefile
+
+current directory: /home/zuz/code/zzuziak/zuzazuber/gems/debug-1.6.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20220814-30808-4s8z41 sitelibdir\=./.gem.20220814-30808-4s8z41 clean
+
+current directory: /home/zuz/code/zzuziak/zuzazuber/gems/debug-1.6.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20220814-30808-4s8z41 sitelibdir\=./.gem.20220814-30808-4s8z41
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/zuz/code/zzuziak/zuzazuber/gems/debug-1.6.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20220814-30808-4s8z41 sitelibdir\=./.gem.20220814-30808-4s8z41 install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20220814-30808-4s8z41/debug
