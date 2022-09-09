@@ -12,6 +12,7 @@ class PostsController < ApplicationController
   end
 
   def new
+    redirect_to root_path unless current_user
     @post = Post.new
   end
 
@@ -25,6 +26,7 @@ class PostsController < ApplicationController
   end
 
   def edit
+    redirect_to root_path unless current_user
   end
 
   def update
