@@ -4,7 +4,7 @@ import "./controllers"
 import "bootstrap"
 import "trix"
 import "@rails/actiontext"
-// import { AttachmentUpload } from "@rails/actiontext/app/javascript/actiontext/attachment_upload"
+import { AttachmentUpload } from "@rails/actiontext/app/javascript/actiontext/attachment_upload"
 
 // addEventListener("trix-attachment-add", event => {
 //   const { attachment, target } = event
