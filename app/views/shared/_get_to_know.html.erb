@@ -1,0 +1,35 @@
+<div class="<%= "mobile" if mobile %> col-sm-4 get-to-know mx-auto">
+  <div class="stroked d-none d-sm-grid">
+    <%= image_tag "brush.svg", class: "stroke" %>
+    <p class="section-title text-center over-stroke">GET TO KNOW ME</p>
+  </div>
+  <div class="who-am-i">
+    <p class="section-title d-sm-none">WHO AM I?</p>
+    <div class="bullets mh-3">
+      <div class="d-flex justify-content-start align-items-center mb-3">
+        <%= image_tag "ellipse_orange", class:"bullet" %>
+        <p class="mb-0">My name is Zuza Zuber. Polish girl living in Berlin.</p>
+      </div>
+      <div class="d-flex justify-content-start align-items-center mb-3">
+        <%= image_tag "ellipse_yellow", class:"bullet" %>
+        <p class="mb-0">I am a developer, manager, teacher, mentor, dog mum, campervan owner, movement lover.</p>
+      </div>
+      <div class="d-flex justify-content-start align-items-center mb-3">
+        <%= image_tag "ellipse_green", class:"bullet" %>
+        <p class="mb-0">I love helping people change their lives. I love making a difference for the planet and working on meaningful projects. I love people, just in general.</p>
+      </div>
+      <div class="d-flex justify-content-end">
+        <%= link_to "Read more >", about_path, class: "more-link" %>
+      </div>
+    </div>
+  </div>
+  <div class="stroked d-none d-sm-grid">
+    <%= image_tag "brush.svg", class: "stroke" %>
+    <p class="section-title text-center over-stroke">LET'S COLLABORATE</p>
+  </div>
+  <p class="section-title d-sm-none mt-4">LET'S COLLABORATE</p>
+  <p class="mx-3">If you are creating or working on something wholesome - reach out! I’m more than happy to volunteer, brainstorm, give advice, teach or collaborate on bigger projects.</p>
+  <div class="d-flex justify-content-end">
+    <%= link_to "Get in touch >", contact_path, class: "more-link mb-3" %>
+  </div>
+</div>

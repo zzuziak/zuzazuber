@@ -1,0 +1,27 @@
+.blog-category {
+  font-family: 'Titillium Web';
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.similar-posts {
+  margin-top: 40px;
+  border: 1px solid $gray;
+  padding: 20px;
+}
+
+@media (max-width: 480px) {
+  .similar-posts {
+      margin-top: 20px;
+      border: none;
+      .section-title-small {
+        font-size: 20px;
+      }
+    }
+
+  .blog-category {
+    font-size: 12px;
+  }
+
+
+}

@@ -1,0 +1,139 @@
+.post-preview {
+  width: 80%;
+  margin: 50px auto !important;
+
+  .main-post-link {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .image {
+    height: 400px;
+    background-size: cover;
+  }
+
+  .post-title {
+    margin-top: 16px;
+    font-family: "Titillium Web";
+    font-size: 32px;
+    font-weight: 400;
+  }
+
+  .post-date {
+    margin-top: 16px;
+    font-family: 'Montserrat';
+    font-size: 12px;
+  }
+
+  .post-highlight {
+    font-family: "Montserrat";
+    font-weight: 400;
+  }
+
+  .post-link {
+    text-align: right;
+    text-decoration: none;
+    color: $gray;
+    font-size: 16px;
+    &:hover {
+      color: $yellow;
+    }
+  }
+
+  &.main {
+
+    .post-title {
+      font-size: 32px;
+      font-weight: 600;
+    }
+
+    .post-text {
+      padding-left: 24px !important;
+    }
+
+    .post-highlight {
+      font-size: 20px;
+    }
+  }
+  &.small {
+    .image {
+      height: 300px;
+    }
+
+    .post-title {
+      font-size: 24px;
+    }
+
+    .post-highlight {
+      font-weight: 400;
+    }
+  }
+}
+
+.post-preview-xs {
+  display: flex;
+  margin: 20px;
+
+  .post-title {
+    font-family: "Montserrat";
+    color: $gray;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 16px;
+    text-align: left;
+  }
+
+  .post-date {
+    font-family: "Montserrat";
+    color: $gray;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+  }
+
+  .image {
+    height: 100px !important;
+    width: 100px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .post-preview {
+    .main-post-link {
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+    &.main {
+      width: 100%;
+      margin: 20px auto 30px auto;
+
+    .post-title {
+        font-family: "Montserrat";
+        color: $gray;
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 16px;
+        text-align: left;
+      }
+
+    .post-highlight {
+      font-size: 14px;
+      font-family: "Montserrat";
+      font-weight: 400;
+    }
+
+    .post-link {
+      text-align: right;
+      text-decoration: none;
+      color: $gray;
+    }
+
+    .image {
+        height: 200px !important;
+        width: 100% !important;
+        background-size: cover;
+      }
+    }
+  }
+}

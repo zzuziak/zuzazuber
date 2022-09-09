@@ -1,0 +1,21 @@
+.footer {
+  background-color: $yellow;
+  height: 70px;
+}
+
+.footnote {
+  font-family: "Montserrat";
+  font-size: 20px;
+  color: $gray;
+  margin: 0 16px;
+}
+
+@media (max-width: 480px) {
+  .footer {
+    height: 40px;
+  }
+
+  .footnote {
+    font-size: 12px;
+  }
+}

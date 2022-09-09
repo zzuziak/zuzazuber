@@ -1,0 +1,32 @@
+<p class="text-center about-slogan">and this is some of my writing</p>
+
+<%= render "shared/main_post_preview", post: @last_post %>
+
+<div class="row d-none d-sm-flex px-5">
+  <div class="d-flex justify-content-around">
+    <p class='blog-category'>WORK</p>
+    <p class='blog-category'>TECH</p>
+    <p class='blog-category'>TRAVEL</p>
+    <p class='blog-category'>BOOKS</p>
+    <p class='blog-category'>LIFE HACKS</p>
+    <p class='blog-category'>DOGS</p>
+    <p class='blog-category'>BERLIN</p>
+  </div>
+</div>
+
+<div class="container d-none d-sm-block">
+  <div class="row">
+    <% @other_posts.each do |post| %>
+      <% next if post.nil? %>
+        <div class="col-4">
+          <%= render "shared/post_preview", post: post, small: true %>
+        </div>
+    <% end %>
+  </div>
+</div>
+
+<div class="d-sm-none">
+  <% @other_posts.each do |post| %>
+    <%= render "shared/main_post_preview", post: post %>
+  <% end %>
+</div>

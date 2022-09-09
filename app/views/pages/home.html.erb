@@ -8,10 +8,16 @@
 </div>
 
 <div class="row">
-  <div class="col-5">
+  <div class="col-sm-5">
   </div>
-  <div class="col-7">
-    <p class="intro-slogan">Welcome to my tiny space in the world wide web.</p>
+  <div class="col-sm-7 intro">
+    <div class="row d-sm-none">
+      <div class="col-6 d-sm-none"></div>
+      <div class="col-6 d-sm-none">
+        <p class="intro-slogan">Welcome to my tiny space in the world wide web.</p>
+      </div>
+    </div>
+    <p class="intro-slogan d-none d-sm-block">Welcome to my tiny space in the world wide web.</p>
     <div class="intro-paragraph-container">
       <p class="intro-paragraph">It’s a great place to start if you want to get to know me better. Altough I look like a 19 year old kid, I have already done quite a bit in my life.</p>
       <p class="intro-paragraph">This space is  gathering my thoughts both on professional life, the tech world and mentoring women, and private stuff, including being a dog mum and traveling in a camper van with my partner.</p>
@@ -19,13 +25,24 @@
     </div>
   </div>
 </div>
-
-<div class="row content">
-  <div class="col-6">
-    <p class="section-title text-center">READING</p>
-    <%= render "shared/post_preview", post: @posts.last %>
+<div class="row content d-none d-sm-flex">
+  <div class="col-sm-6">
+    <p class="section-title text-center" id="reading">READING</p>
+    <%= render "shared/post_preview", post: @last_post, small: false %>
   </div>
-  <div class="col-6">
-    <p class="section-title text-center">GET TO KNOW ME</p>
+  <%= render 'shared/get_to_know', mobile: false %>
+</div>
+<!-- MOBILE -->
+<div class="container">
+  <div class="row other-posts d-none d-sm-flex">
+    <% @other_posts.each do |post| %>
+    <% next if post.nil? %>
+      <div class="col-4">
+        <%= render "shared/post_preview", post: post, small: true %>
+      </div>
+    <% end %>
   </div>
 </div>
+<%= render "home_get_to_know_mobile" %>
+<%= render "home_posts_carousel_mobile", last_post: @last_post, other_posts: @other_posts %>
+

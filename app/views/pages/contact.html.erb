@@ -1,0 +1,19 @@
+
+<div class="container">
+  <p class="text-center contact-slogan">Want to grab a coffee, collaborate or simply connect?</p>
+  <p class="contact-reach text-center">Then reach out via one of:</p>
+  <div class="d-flex justify-content-around align-items-center contact-icons">
+    <%= link_to "https://www.linkedin.com/in/zuza-%C5%BCuber-a627b69a/", target: :blank, class: "contact-icon" do %>
+      <i class="fa-brands fa-linkedin"></i>
+    <% end %>
+    <%= mail_to "zuberzuzanna@gmail.com", class: "contact-icon" do %>
+      <i class="fa-solid fa-envelope"></i>
+    <% end %>
+    <%= link_to "https://www.github.com/zzuziak", target: :blank, class: "contact-icon" do %>
+      <i class="fa-brands fa-github"></i>
+    <% end %>
+    <%= link_to "https://www.instagram.com/susan.naah/", target: :blank, class: "contact-icon" do %>
+      <i class="fa-brands fa-instagram"></i>
+    <% end %>
+  </div>
+</div>

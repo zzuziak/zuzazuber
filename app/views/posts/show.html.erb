@@ -1,2 +1,36 @@
-<h1><%= post.title %></h1>
-<p><%= post.body %></p>
+<div class="container">
+  <div class="d-flex flex-column align-items-center">
+    <% if current_user %>
+      <div class="d-flex">
+        <%= link_to "EDIT", edit_post_path(@post), class: "admin-nav-link" %>
+        <%= link_to "DELETE", post_path(@post), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "admin-nav-link" %>
+      </div>
+    <% end %>
+    <h1 class="post-title-show"><%= @post.title.upcase %></h1>
+    <p class="post-highlight-show"><%= @post.highlight %></p>
+    <%= cl_image_tag @post.photo&.key, class: 'post-image-show', crop: :fill %>
+  </div>
+  <div class="row mx-sm-3">
+    <div class="col-12 col-sm-7">
+      <p class="post-body-show"><%= @post.body %></p>
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="col-12 col-sm-4">
+      <div class="similar-posts">
+        <div>
+          <div class="posts-header">
+            <div class="stroked">
+              <%= image_tag "brush.svg", class: "stroke" %>
+              <p class="section-title-small text-center over-stroke">IF YOU LIKED THIS...</p>
+            </div>
+          </div>
+          <div>
+            <% @similar_posts.each do |post| %>
+              <%= render 'shared/post_preview_xs', post: post %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

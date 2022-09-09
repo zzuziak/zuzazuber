@@ -1,0 +1,13 @@
+<div class="row post-preview main mb-sm-5">
+  <%= link_to post_path(post), class: "col-sm-6 link p-0" do %>
+    <div class="image" style="background-image: url('<%= cl_image_path post.photo&.key, crop: :fill, height: 300 %>')"></div>
+  <% end %>
+  <div class="col-sm-6 post-text ">
+    <p class="post-date"><%= post.created_at.strftime("%b %e, %Y") %></p>
+    <p class="post-title"><%= post.title %></p>
+    <p class="post-highlight"><%= post.highlight %></p>
+    <div class="d-flex justify-content-end d-sm-block">
+      <%= link_to "Read on >", post_path(post), class: "link mb-4 main-post-link" %>
+    </div>
+  </div>
+</div>

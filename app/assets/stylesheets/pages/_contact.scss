@@ -1,0 +1,55 @@
+.contact-slogan {
+  font-family: "Qwigley";
+  font-size: 64px;
+  padding-top: 32px;
+}
+
+.contact-icons {
+  width: 60%;
+  margin: 40px auto;
+}
+
+.contact-icon {
+  font-size: 64px;
+  color: $yellow;
+  text-decoration: none;
+
+  &:hover {
+    color: $gray;
+  }
+}
+
+.contact-reach {
+  font-family: "Titillium Web";
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 480px) {
+  .contact-icons {
+      width: 90%;
+      margin: 16px auto;
+    }
+
+    .contact-icon {
+      font-size: 32px;
+      color: $yellow;
+      text-decoration: none;
+
+      &:hover {
+        color: $gray;
+      }
+    }
+
+    .contact-slogan {
+      font-family: "Qwigley";
+      font-size: 48px;
+      padding: 20px 8px 20px 8px;
+    }
+
+    .contact-reach {
+      font-family: "Titillium Web";
+      font-size: 16px;
+      margin-bottom: 32px;
+    }
+}

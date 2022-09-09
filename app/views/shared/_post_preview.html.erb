@@ -1,7 +1,14 @@
-<div class="post-preview">
-  <div class="post-preview-image">
+<%#= link_to post_path(post) do %>
+  <div class="post-preview <%= "small" if small %>">
+    <%= link_to post_path(post), class: 'link' do %>
+      <div class="image" style="background-image: url('<%= cl_image_path post.photo&.key, height: 400, crop: :fill %>')">
+      </div>
+      <p class="post-title"><%= post.title %></p>
+    <% end %>
+    <p class="post-date"><%= @last_post.created_at.strftime("%b %e, %Y") %></p>
+    <p class="post-highlight"><%= post.highlight %></p>
+    <div class="d-flex justify-content-end">
+      <%= link_to "Read on >", post_path(post), class: "post-link" %>
+    </div>
   </div>
-  <p><%= post.title %></p>
-  <p><%= post.highlight %></p>
-  <%= link_to "Read on >", post_path(post) %>
-</div>
+<%# end %>

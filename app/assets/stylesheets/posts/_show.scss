@@ -1,0 +1,49 @@
+.post-title-show {
+  font-family: 'Titillium Web';
+  font-size: 48px;
+  font-weight: 600;
+  margin-top: 100px;
+}
+
+.post-highlight-show {
+  font-style: italic;
+  font-size: 20px;
+  margin: 25px 80px;
+}
+
+.post-image-show {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.trix-content {
+  margin-top: 50px;
+  font-family: 'Montserrat';
+  font-size: 16px;
+}
+
+@media (max-width: 480px) {
+  .post-title-show {
+      font-size: 24px;
+      margin: 24px 8px 4px 8px;
+    }
+
+    .post-highlight-show {
+      font-style: italic;
+      font-size: 16px;
+      margin: 8px;
+    }
+
+    .post-image-show {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .trix-content {
+      padding: 8px;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+}

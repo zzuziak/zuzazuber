@@ -1,0 +1,12 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-own">
+  <div class="w-100 d-flex justify-content-end align-items-center">
+    <ul class="navbar-nav right d-none d-sm-flex justify-content-end">
+        <li class="nav-item left">
+          <%= link_to "NEW POST", new_post_path, class: "admin-nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "LOG OUT", destroy_user_session_path, class: "admin-nav-link" %>
+        </li>
+    </ul>
+  </div>
+</div>

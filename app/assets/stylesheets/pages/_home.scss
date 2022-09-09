@@ -18,7 +18,7 @@ body {
   position: absolute;
   top: 100px;
   left: 70px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, .1);
 }
 
 .banner-slogan {
@@ -45,8 +45,6 @@ body {
 }
 
 .intro-paragraph {
-  font-family: "Montserrat";
-  font-size: 16px;
   padding: 4px 20px;
 }
 
@@ -57,6 +55,176 @@ body {
   margin-bottom: 0;
 }
 
+.section-title-small {
+  font-family: "Titillium Web";
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.over-stroke {
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 1;
+}
+
 .content {
-  margin: 280px 50px;
+  margin: 280px 50px 0 50px !important;
+}
+
+.other-posts {
+  margin: 50px;
+}
+
+.get-to-know {
+  border: 1px solid $gray;
+  margin-top: -49px;
+  height: fit-content;
+
+  &.mobile {
+    border: none;
+    margin-top: 0px;
+  }
+}
+
+.bullets {
+  margin: 0 16px;
+}
+
+.stroked {
+  display: grid;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.stroke {
+  width: 350px;
+  filter: invert(76%) sepia(70%) saturate(350%) hue-rotate(350deg) brightness(96%) contrast(93%);
+  grid-column: 1;
+  grid-row: 1;
+  margin: 0 auto;
+}
+
+.stroke.yellow {
+  filter: invert(98%) sepia(7%) saturate(3537%) hue-rotate(312deg) brightness(107%) contrast(97%);
+}
+
+.stroke.mint {
+  filter: invert(85%) sepia(34%) saturate(253%) hue-rotate(113deg) brightness(82%) contrast(90%);
+}
+
+.bullet {
+  width: 16px;
+  height: 16px;
+  margin-right: 12px;
+}
+
+.more-link {
+  text-align: right;
+  text-decoration: none;
+  color: $gray;
+  margin-right: 16px;
+
+  &:hover {
+    color: $yellow;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .home-background {
+      background-image: asset-url("background.png");
+      background-size: cover;
+      height: 100px;
+      width: 100vw;
+      position: relative;
+    }
+
+    .side-image {
+      width: 150px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    .banner-slogan {
+      position: absolute;
+      top: 25px;
+      left: 180px;
+
+      .text {
+        font-family: "Titillium Web";
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 0;
+      }
+    }
+
+
+  .intro-slogan {
+    font-family: "Qwigley";
+    font-size: 32px;
+    padding-top: 28px;
+  }
+
+  .intro-paragraph-container {
+    width: 90% !important;
+    margin: 10px;
+  }
+
+  .intro-paragraph {
+    padding: 2px 10px;
+  }
+
+  .more-link {
+    font-size: 12px;
+  }
+
+  .carousel-inner {
+    height: 200px;
+  }
+
+  .carousel-image {
+    position: absolute;
+  }
+
+  .carousel-title {
+    position: relative;
+    top: 20px;
+    left: auto;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    z-index: 2;
+    backdrop-filter: blur(10px) saturate(70%);
+    padding: 4px 8px;
+  }
+
+  .section-title {
+    font-size: 20px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  .stroked {
+    display: grid;
+    align-items: center;
+    margin: 10px auto;
+  }
+
+  .stroke {
+    width: 250px;
+    filter: invert(76%) sepia(70%) saturate(350%) hue-rotate(350deg) brightness(96%) contrast(93%);
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0 auto;
+  }
+
+  .stroke.yellow {
+    filter: invert(98%) sepia(7%) saturate(3537%) hue-rotate(312deg) brightness(107%) contrast(97%);
+  }
+
+  .stroke.mint {
+    filter: invert(85%) sepia(34%) saturate(253%) hue-rotate(113deg) brightness(82%) contrast(90%);
+  }
 }
