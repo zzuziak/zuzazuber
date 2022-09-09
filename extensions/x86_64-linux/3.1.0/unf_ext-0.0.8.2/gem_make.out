@@ -1,0 +1,16 @@
+current directory: /home/zuz/code/zzuziak/zuzazuber/gems/unf_ext-0.0.8.2/ext/unf_ext
+/home/zuz/.rbenv/versions/3.1.2/bin/ruby -I /home/zuz/.rbenv/versions/3.1.2/lib/ruby/site_ruby/3.1.0 extconf.rb
+checking for -lstdc++... yes
+creating Makefile
+
+current directory: /home/zuz/code/zzuziak/zuzazuber/gems/unf_ext-0.0.8.2/ext/unf_ext
+make DESTDIR\= sitearchdir\=./.gem.20220909-573570-1716yq sitelibdir\=./.gem.20220909-573570-1716yq clean
+
+current directory: /home/zuz/code/zzuziak/zuzazuber/gems/unf_ext-0.0.8.2/ext/unf_ext
+make DESTDIR\= sitearchdir\=./.gem.20220909-573570-1716yq sitelibdir\=./.gem.20220909-573570-1716yq
+compiling unf.cc
+linking shared-object unf_ext.so
+
+current directory: /home/zuz/code/zzuziak/zuzazuber/gems/unf_ext-0.0.8.2/ext/unf_ext
+make DESTDIR\= sitearchdir\=./.gem.20220909-573570-1716yq sitelibdir\=./.gem.20220909-573570-1716yq install
+/usr/bin/install -c -m 0755 unf_ext.so ./.gem.20220909-573570-1716yq
