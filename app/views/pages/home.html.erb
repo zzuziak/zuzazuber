@@ -28,7 +28,7 @@
 <div class="row content d-none d-sm-flex">
   <div class="col-sm-6">
     <p class="section-title text-center" id="reading">READING</p>
-    <%= render "shared/post_preview", post: @last_post, small: false %>
+    <%= render "shared/post_preview", post: @last_post, small: false if @last_post %>
   </div>
   <%= render 'shared/get_to_know', mobile: false %>
 </div>

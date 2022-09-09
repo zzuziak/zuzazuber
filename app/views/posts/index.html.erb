@@ -1,6 +1,6 @@
 <p class="text-center about-slogan">and this is some of my writing</p>
 
-<%= render "shared/main_post_preview", post: @last_post %>
+<%= render "shared/main_post_preview", post: @last_post if @last_post %>
 
 <div class="row d-none d-sm-flex px-5">
   <div class="d-flex justify-content-around">
@@ -27,6 +27,7 @@
 
 <div class="d-sm-none">
   <% @other_posts.each do |post| %>
+    <% next if post.nil? %>
     <%= render "shared/main_post_preview", post: post %>
   <% end %>
 </div>
