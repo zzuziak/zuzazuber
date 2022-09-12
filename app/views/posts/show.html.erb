@@ -16,21 +16,23 @@
     </div>
     <div class="col-sm-1"></div>
     <div class="col-12 col-sm-4">
-      <div class="similar-posts">
-        <div>
-          <div class="posts-header">
-            <div class="stroked">
-              <%= image_tag "brush.svg", class: "stroke" %>
-              <p class="section-title-small text-center over-stroke">IF YOU LIKED THIS...</p>
+      <% if @similar_posts %>
+        <div class="similar-posts">
+          <div>
+            <div class="posts-header">
+              <div class="stroked">
+                <%= image_tag "brush.svg", class: "stroke" %>
+                <p class="section-title-small text-center over-stroke">IF YOU LIKED THIS...</p>
+              </div>
+            </div>
+            <div>
+              <% @similar_posts.each do |post| %>
+                <%= render 'shared/post_preview_xs', post: post %>
+              <% end %>
             </div>
           </div>
-          <div>
-            <% @similar_posts.each do |post| %>
-              <%= render 'shared/post_preview_xs', post: post %>
-            <% end %>
-          </div>
         </div>
-      </div>
+      <% end %>
     </div>
   </div>
 </div>
