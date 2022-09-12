@@ -1,4 +1,6 @@
-<img src="<%= cl_image_path post.photo&.key %>" class="d-block w-100 carousel-image" alt="...">
+<div class="d-flex justify-content-center">
+  <img src="<%= cl_image_path post.photo&.key %>" class="d-block w-100 carousel-image" alt="...">
+</div>
 <div class="d-flex w-100 justify-content-center">
   <%= link_to post_path(post), class: "link" do %>
     <p class="carousel-title"><span><%= post.title %></span></p>
