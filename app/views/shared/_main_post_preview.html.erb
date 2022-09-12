@@ -1,6 +1,6 @@
 <div class="row post-preview main mb-sm-5">
   <%= link_to post_path(post), class: "col-sm-6 link p-0" do %>
-    <div class="image" style="background-image: url('<%= cl_image_path post.photo&.key, crop: :fill, height: 300 %>')"></div>
+    <div class="image" style="background-image: url('<%= cl_image_path post.photo&.key, crop: :fill %>')"></div>
   <% end %>
   <div class="col-sm-6 post-text ">
     <p class="post-date"><%= post.created_at.strftime("%b %e, %Y") %></p>
