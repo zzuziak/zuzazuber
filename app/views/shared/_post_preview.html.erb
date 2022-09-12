@@ -1,7 +1,7 @@
 <%#= link_to post_path(post) do %>
   <div class="post-preview <%= "small" if small %>">
     <%= link_to post_path(post), class: 'link' do %>
-      <div class="image" style="background-image: url('<%= cl_image_path post.photo&.key, height: 400, crop: :fill %>')">
+      <div class="image" style="background-image: url('<%= cl_image_path post.photo&.key, crop: :fill %>')">
       </div>
       <p class="post-title"><%= post.title %></p>
     <% end %>
